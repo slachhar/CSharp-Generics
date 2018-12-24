@@ -33,6 +33,20 @@ namespace Generics
 
 			var array1 = queue.ToArray(); // it will convert the queue to array
 
+			//Stack
+			Stack<int> stack = new Stack<int>();
+			stack.Push(1);
+			stack.Push(2);
+			stack.Push(3);
+
+			var firstStack = queue.Dequeue(); // it will return and remove the items from first come first serve bases
+
+			var peekStack = queue.Peek(); // it return the first item in the queue
+
+			bool presentStack = queue.Contains(5); // it will return if the queue contains the paramter passed
+
+			var array1Stack = queue.ToArray(); // it will convert the queue to array
+
 
 		}
 	}
